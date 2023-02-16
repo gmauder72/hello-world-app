@@ -1,0 +1,14 @@
+body{
+    background-color: rgb(17,22,24);
+}
+div.widget-container{
+width: 400px;
+border-radius: 2px;
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+border-top: 3px solid rgb(31, 85, 74);
+border-top-width: 3px;
+font-size: 1rem;
+margin-bottom: 1rem;
+box-sizing:border-box;
+}
