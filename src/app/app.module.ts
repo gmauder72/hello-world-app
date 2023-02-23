@@ -8,6 +8,9 @@ import { OpinionCardComponent } from './opinion-card/opinion-card.component';
 import { EventCardComponent } from './event-card/event-card.component';
 import { NewsCardComponent } from './news-card/news-card.component';
 import { StreamComponent } from './stream/stream.component';
+import { TitlePageComponent } from './title-page/title-page.component';
+import { NewTimesComponent } from './new-times/new-times.component';
+import { BannerComponent } from './banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +19,10 @@ import { StreamComponent } from './stream/stream.component';
     OpinionCardComponent,
     EventCardComponent,
     NewsCardComponent,
-    StreamComponent
+    StreamComponent,
+    TitlePageComponent,
+    NewTimesComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

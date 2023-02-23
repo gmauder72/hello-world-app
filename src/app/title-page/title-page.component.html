@@ -1,0 +1,32 @@
+<body>
+    <app-nav-bar></app-nav-bar>
+    <div class="container" style="margin-right: 50px;" style="margin-top: 10px">
+        <div class="row align-items-start" style="float:none" style="margin-left: 100px;" >
+          <div class="col">
+          <app-stream></app-stream>
+
+          <div class="widget-container w-100 h-15" style="float:left">
+            <div class ="card w-100 h-15 text-bg-dark hover" style="float:right" style=" border: radius 0;">
+            <div class="card-header">LATEST RUNS</div>
+            <div class="card-body" bg-dark>
+                 <div *ngFor="let item of products">
+                     <app-new-times imgDescription={{item.imgDescription}}  img={{item.img}} gameTitle={{item.gameTitle}} daySubmitted={{item.daySubmitted}} runCategory={{item.runCategory}} runTime={{item.runTime}} runPlace={{item.runPlace}} username={{item.username}}></app-new-times>
+                 </div>
+            </div>
+            </div>
+            </div>
+
+          </div>
+          <div class="col">
+               
+          <app-banner></app-banner>
+
+          <app-opinion-card></app-opinion-card>
+
+          <app-event-card></app-event-card>
+
+          <app-news-card></app-news-card>
+          </div>
+          </div>
+          </div>
+          </body>
