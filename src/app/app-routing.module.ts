@@ -1,7 +1,31 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { FoumsLayoutComponent } from './Layouts/foums-layout/foums-layout.component';
+import { GamesLayoutComponent } from './Layouts/games-layout/games-layout.component';
+import { HomePageLayoutComponent } from './Layouts/home-page-layout/home-page-layout.component';
+import { LeaderboardLayoutComponent } from './Layouts/leaderboard-layout/leaderboard-layout.component';
+import { LogInLayoutComponent } from './Layouts/log-in-layout/log-in-layout.component';
 
-const routes: Routes = [];
+const routes: Routes = [{
+  path: '',
+  component: HomePageLayoutComponent
+ },
+ {
+  path: 'gamesLayout',
+ component: GamesLayoutComponent
+},
+{
+  path: 'forumsLayout',
+  component: FoumsLayoutComponent
+ },
+ {
+  path: 'leaderboardLayout',
+  component: LeaderboardLayoutComponent
+ },
+ {
+  path: 'LogInLayout',
+  component: LogInLayoutComponent
+ }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -11,6 +11,11 @@ import { StreamComponent } from './stream/stream.component';
 import { TitlePageComponent } from './title-page/title-page.component';
 import { NewTimesComponent } from './new-times/new-times.component';
 import { BannerComponent } from './banner/banner.component';
+import { GamesLayoutComponent } from './Layouts/games-layout/games-layout.component';
+import { FoumsLayoutComponent } from './Layouts/foums-layout/foums-layout.component';
+import { LeaderboardLayoutComponent } from './Layouts/leaderboard-layout/leaderboard-layout.component';
+import { HomePageLayoutComponent } from './Layouts/home-page-layout/home-page-layout.component';
+import { LogInLayoutComponent } from './Layouts/log-in-layout/log-in-layout.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { BannerComponent } from './banner/banner.component';
     StreamComponent,
     TitlePageComponent,
     NewTimesComponent,
-    BannerComponent
+    BannerComponent,
+    GamesLayoutComponent,
+    FoumsLayoutComponent,
+    LeaderboardLayoutComponent,
+    HomePageLayoutComponent,
+    LogInLayoutComponent
   ],
   imports: [
     BrowserModule,
