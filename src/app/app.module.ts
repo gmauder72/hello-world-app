@@ -16,6 +16,12 @@ import { FoumsLayoutComponent } from './Layouts/foums-layout/foums-layout.compon
 import { LeaderboardLayoutComponent } from './Layouts/leaderboard-layout/leaderboard-layout.component';
 import { HomePageLayoutComponent } from './Layouts/home-page-layout/home-page-layout.component';
 import { LogInLayoutComponent } from './Layouts/log-in-layout/log-in-layout.component';
+import { GameInfoComponent } from './Layouts/leaderboard-layout/game-info/game-info.component';
+import { leaderboardComponent } from './Layouts/leaderboard-layout/leaderboard/leaderboard.component';
+import { LeaderboardInfoComponent } from './Layouts/leaderboard-layout/leaderboard-info/leaderboard-info.component';
+import { MainForumsComponent } from './Layouts/foums-layout/main-forums/main-forums.component';
+import { SupporterForumsComponent } from './Layouts/foums-layout/supporter-forums/supporter-forums.component';
+import { ForumVideoComponent } from './Layouts/forum-video/forum-video.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { LogInLayoutComponent } from './Layouts/log-in-layout/log-in-layout.comp
     FoumsLayoutComponent,
     LeaderboardLayoutComponent,
     HomePageLayoutComponent,
-    LogInLayoutComponent
+    LogInLayoutComponent,
+    GameInfoComponent,
+    leaderboardComponent,
+    LeaderboardInfoComponent,
+    MainForumsComponent,
+    SupporterForumsComponent,
+    ForumVideoComponent
   ],
   imports: [
     BrowserModule,

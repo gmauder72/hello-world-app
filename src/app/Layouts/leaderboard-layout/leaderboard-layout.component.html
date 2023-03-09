@@ -1,1 +1,5 @@
-<p>leaderboard-layout works!</p>
+<app-game-info></app-game-info>
+<app-leaderboard-info></app-leaderboard-info>
+<div *ngFor="let item of products">
+    <app-leaderboard rank={{item.rank}}  username={{item.username}} inGame={{item.inGame}} realTime={{item.realTime}} date={{item.date}}></app-leaderboard>
+</div>
