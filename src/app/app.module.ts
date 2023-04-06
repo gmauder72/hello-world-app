@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,7 +22,7 @@ import { leaderboardComponent } from './Layouts/leaderboard-layout/leaderboard/l
 import { LeaderboardInfoComponent } from './Layouts/leaderboard-layout/leaderboard-info/leaderboard-info.component';
 import { MainForumsComponent } from './Layouts/foums-layout/main-forums/main-forums.component';
 import { SupporterForumsComponent } from './Layouts/foums-layout/supporter-forums/supporter-forums.component';
-import { ForumVideoComponent } from './Layouts/forum-video/forum-video.component';
+import { UserInfoComponent } from './user-info/user-info.component';
 
 @NgModule({
   declarations: [
@@ -44,11 +45,13 @@ import { ForumVideoComponent } from './Layouts/forum-video/forum-video.component
     LeaderboardInfoComponent,
     MainForumsComponent,
     SupporterForumsComponent,
-    ForumVideoComponent
+    UserInfoComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

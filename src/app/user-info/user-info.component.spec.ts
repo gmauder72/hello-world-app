@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ForumVideoComponent } from './forum-video.component';
+import { UserInfoComponent } from './user-info.component';
 
-describe('ForumVideoComponent', () => {
-  let component: ForumVideoComponent;
-  let fixture: ComponentFixture<ForumVideoComponent>;
+describe('UserInfoComponent', () => {
+  let component: UserInfoComponent;
+  let fixture: ComponentFixture<UserInfoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ForumVideoComponent ]
+      declarations: [ UserInfoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ForumVideoComponent);
+    fixture = TestBed.createComponent(UserInfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
