@@ -23,6 +23,14 @@ import { LeaderboardInfoComponent } from './Layouts/leaderboard-layout/leaderboa
 import { MainForumsComponent } from './Layouts/foums-layout/main-forums/main-forums.component';
 import { SupporterForumsComponent } from './Layouts/foums-layout/supporter-forums/supporter-forums.component';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { AddProductComponent } from './add-product/add-product.component';
+import { FormsModule } from '@angular/forms';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { initializeApp,provideFirebaseApp} from '@angular/fire/app';
+import { provideDatabase, getDatabase } from '@angular/fire/database';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore/'
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -46,9 +54,14 @@ import { UserInfoComponent } from './user-info/user-info.component';
     MainForumsComponent,
     SupporterForumsComponent,
     UserInfoComponent,
+    AddProductComponent,
     
   ],
   imports: [
+    provideFirebaseApp(() =>initializeApp(environment.firebase)),provideDatabase(() => getDatabase()),
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule,
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule

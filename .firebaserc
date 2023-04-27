@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "speedrun-app-ce1b6"
+  },
+  "targets": {
+    "speedrun-app-ce1b6": {
+      "hosting": {
+        "Speedrun-app": [
+          "spreedrun-app-ce1b6"
+        ]
+    }
   }
+}
 }
