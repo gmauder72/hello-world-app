@@ -16,7 +16,7 @@
     ]
   },
   {
-    "target": "HelloWorldApp",
+    "target": "Speedrun-app",
     "public": "dist/hello-world-app",
     "ignore": [
       "**/.*"
