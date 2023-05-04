@@ -31,6 +31,7 @@ import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore/'
 import { environment } from 'src/environments/environment';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { environment } from 'src/environments/environment';
     SupporterForumsComponent,
     UserInfoComponent,
     AddProductComponent,
+    AuthComponent,
     
     
   ],
