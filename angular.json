@@ -91,18 +91,28 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "hello-world-app:build:production",
+            "firebaseProject": "speedrun-app-ce1b6",
+            "firebaseHostingSite": "speedrun-app-ce1b6"
+          }
         }
       }
     }
   },
-  "deploy" : {
+  "deploy": {
     "builder": "@angular/fire:deploy",
     "options": {
       "prerender": false,
       "ssr": false,
       "browserTarget": "Speedrun-app:build:production",
       "firebaseProject": "speedrun-app-ce1b6",
-      "firebaseHostingSite": "speedrun-app-ce1b6" 
+      "firebaseHostingSite": "speedrun-app-ce1b6"
     }
   }
 }

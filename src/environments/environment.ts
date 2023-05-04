@@ -1,13 +1,13 @@
 export const environment = {
   firebase: {
-    projectId: 'tutorial-db3ee',
-    appId: '1:337478714478:web:34d6ad9bdafe4d19a1127f',
-    databaseURL: 'https://tutorial-db3ee-default-rtdb.firebaseio.com',
-    storageBucket: 'tutorial-db3ee.appspot.com',
-    apiKey: 'AIzaSyAFQHqUBKIhCXvj7t2BO4Y2NNvnbRu3eAs',
-    authDomain: 'tutorial-db3ee.firebaseapp.com',
-    messagingSenderId: '337478714478',
-    measurementId: 'G-PRB5ZSKMVX',
+    projectId: 'speedrun-app-ce1b6',
+    appId: '1:99214238608:web:033e38c9f8d12748150915',
+    databaseURL: 'https://speedrun-app-ce1b6-default-rtdb.firebaseio.com',
+    storageBucket: 'speedrun-app-ce1b6.appspot.com',
+    apiKey: 'AIzaSyD11lU3oiDjfLKbr2DXCQVqAUc5P8hrh8Q',
+    authDomain: 'speedrun-app-ce1b6.firebaseapp.com',
+    messagingSenderId: '99214238608',
+    measurementId: 'G-5CK319BK0F',
   },
   production: false
 };

@@ -25,7 +25,7 @@ import { SupporterForumsComponent } from './Layouts/foums-layout/supporter-forum
 import { UserInfoComponent } from './user-info/user-info.component';
 import { AddProductComponent } from './add-product/add-product.component';
 import { FormsModule } from '@angular/forms';
-import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+//import { AngularFireDatabase, AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { initializeApp,provideFirebaseApp} from '@angular/fire/app';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
 import { AngularFireModule } from '@angular/fire/compat';
@@ -56,6 +56,7 @@ import { environment } from 'src/environments/environment';
     UserInfoComponent,
     AddProductComponent,
     
+    
   ],
   imports: [
     provideFirebaseApp(() =>initializeApp(environment.firebase)),provideDatabase(() => getDatabase()),
@@ -64,7 +65,9 @@ import { environment } from 'src/environments/environment';
     FormsModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    //AngularFireDatabaseModule,
+    //AngularFireDatabase
   ],
   providers: [],
   bootstrap: [AppComponent]

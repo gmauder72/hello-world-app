@@ -5,10 +5,10 @@
   "targets": {
     "speedrun-app-ce1b6": {
       "hosting": {
-        "Speedrun-app": [
-          "spreedrun-app-ce1b6"
+        "hello-world-app": [
+          "speedrun-app-ce1b6"
         ]
+      }
     }
   }
-}
 }
